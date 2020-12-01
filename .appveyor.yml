@@ -49,7 +49,7 @@ before_build:
   - tools\win\which.exe python.exe
   - python -V
   - python -m pip install virtualenv wheel absl-py mypy-protobuf
-  - python -m pip show mypy-protobuf
+  - set PATH=C:\Python38-x64\Scripts;%PATH%
   - tools\win\which.exe protoc-gen-mypy
   - tools\win\which.exe dotnet.exe
   - dotnet --info
